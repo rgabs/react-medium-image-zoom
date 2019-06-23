@@ -1,4 +1,5 @@
-import React, { Component, Fragment } from 'react'
+import React, { Component } from 'react'
+import { Fragment } from 'preact';
 import { bool, func, object, shape, string } from 'prop-types'
 import defaults from './defaults'
 import { isMaxDimension } from './helpers'
@@ -43,8 +44,8 @@ export default class ImageZoom extends Component {
         zoomImage: {}
       },
       shouldHandleZoom: () => true,
-      onZoom: () => {},
-      onUnzoom: () => {}
+      onZoom: () => { },
+      onUnzoom: () => { }
     }
   }
 
@@ -162,7 +163,7 @@ export default class ImageZoom extends Component {
               onUnzoom={this._handleUnzoom}
             />
           </EventsWrapper>
-        : null}
+          : null}
       </Fragment>
     );
   }
