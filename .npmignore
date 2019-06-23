@@ -9,6 +9,5 @@
 .storybook/
 example/
 nodemon.json
-src/
 stories/
 docs/
